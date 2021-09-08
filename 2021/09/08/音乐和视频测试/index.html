@@ -133,16 +133,15 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>很遗憾，我没有服务器，视频外链和音乐外链很难获取（天价）</p>
+        <p>很遗憾，我没有服务器，视频外链和音乐外链很难获取（天价）<br><del>虽然很不甘心，</del>只能放弃了。而且很奇怪的是，这篇文章没有加入评论系统。</p>
 <ul>
-<li><p>外链aplayer播放器（别人的链接，外网）</p>
+<li><p>外链aplayer播放器（别人的链接，外网）<del>似乎因为后面的内嵌标签无法显示</del></p>
 <div class="aplayer-box" data-url='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.mp3' data-name='アイロニ' data-artist='鹿乃' data-cover='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.jpg' data-lrc='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.lrc' data-lrcType='3' ></div></li>
 <li><p>网易云官方外链</p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=469719260&auto=1&height=66"></iframe></li>
 <li><p>哔哩哔哩引用<br>无法调清晰度，可以全屏，我讨厌极了这个跳转。可以看到弹幕，不能发弹幕。</p>
 <iframe class="bilibili" src="//player.bilibili.com/player.html?aid=890447701&bvid=BV1hP4y1Y7nm&cid=404949021&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  width=100%</iframe></li>
 </ul>
-<p><del>虽然很不甘心，</del>只能放弃了。</p>
 
       </section>
 
@@ -364,41 +363,6 @@
 
 
 <!-- dplayer -->
-
-
-<!-- dplayer 视频 start -->
-<script type="text/javascript" src="https://unpkg.com/hls.js@1.0.1/dist/hls.js"></script>
-<script type="text/javascript" src="https://unpkg.com/dplayer@1.25.1/dist/DPlayer.min.js"></script>
-<script type="text/javascript">
-  const dplayer = document.querySelectorAll(".dplayer-box");
-  dplayer && initDPlayer(dplayer);
-  function initDPlayer(els) {
-    let elsArr = Array.from(els);
-    elsArr.forEach(el => {
-      let url = el.dataset.url;
-      let pic = el.dataset.pic;
-      let subtitle = el.dataset.subtitle;
-
-      let options = {
-        container: el,
-        video: { url: url, pic: pic },
-        theme: "#b7daff",
-        autoplay: false,
-        loop: false,
-        mutex: true,
-      }
-
-      if (subtitle) {
-        options.subtitle = {
-          url: el.dataset.subtitle,
-        }
-      }
-      new DPlayer(options);
-    });
-  }
-</script>
-<!-- dplayer 视频 end -->
-
 
 
 
