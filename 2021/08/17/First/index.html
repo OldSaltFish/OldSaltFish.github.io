@@ -176,25 +176,26 @@
 
   
   
+    <div class="valine-container comments-container content-padding--primary soft-size--large soft-style--box">
+      <div id="valine_thread" class="valine-thread"></div>
+    </div>
+    <script type="text/javascript" src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script type="text/javascript" src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script type="text/javascript">
+      new Valine({
+        el: "#valine_thread",
+        appId: "KQb8CXgTbdpsvjiqmKVt7Aha-gzGzoHsz",
+        appKey: "CaXwzR5Au7VjQzSdMXS9nxDz",
+        avatar: "/Picture/avatar.jpg",
+        placeholder: "无聊就说些话",
+        notify: true,
+        visitor: true,
+        pageSize: 10,
+      });
+    </script>
+  
 
   
-  
-    <div class="disqus-container comments-container content-padding--primary soft-size--large soft-style--box">
-      <p id="disqus_error" class="disqus-error" style="display: none;">评论加载失败，下辈子再逝一逝。</p>
-      <div id="disqus_thread" class="disqus-thread"></div>
-    </div>
-    <script type="text/javascript">
-      (function() {
-        var d = document, s = d.createElement('script'), c = d.querySelector(".disqus-container");
-        if (!c) return;
-        s.src = 'https://https://oldsaltfish.disqus.com.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        s.onerror = () => {
-          document.querySelector("#disqus_error").style.display = "block";
-        }
-        (d.head || d.body).appendChild(s);
-      })();
-    </script>
   
 
 
