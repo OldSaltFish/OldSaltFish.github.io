@@ -22,7 +22,7 @@
 
   
 
-  <title>壁纸，admin后台管理测试 | 魂祈梦</title>
+  <title>音乐和视频测试 | 魂祈梦</title>
 
   
 
@@ -45,7 +45,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://i.loli.net/2021/08/23/MovJbu4iSOrAFzt.jpg)"></div>
+    <div class="post-image" style="background-image: url(https://i.loli.net/2021/09/08/OEPFCLGgJRinZoa.jpg)"></div>
   
 
   <!-- navbar -->
@@ -98,11 +98,11 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">壁纸，admin后台管理测试</h1>
+          <h1 class="title-wrap">音乐和视频测试</h1>
           <h2 class="title-sub-wrap">
             <strong>OldSaltFish</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2021-08-23T01:08:39.000Z" itemprop="datePublished">2021-08-23</time>
+            <time  class="article-date" datetime="2021-09-08T13:30:36.000Z" itemprop="datePublished">2021-09-08</time>
           </h2>
           <ul class="wrap-list dark">
   
@@ -133,13 +133,23 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>What’s up?<br><img src="https://i.loli.net/2021/08/23/MovJbu4iSOrAFzt.jpg" alt="屋顶 天空 夜晚 城市 你的名字4K壁纸_彼岸图网.jpg"></p>
+        <p>很遗憾，我没有服务器，视频外链和音乐外链很难获取（天价）</p>
+<ul>
+<li><p>外链aplayer播放器（别人的链接，外网）</p>
+<div class="aplayer-box" data-url='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.mp3' data-name='アイロニ' data-artist='鹿乃' data-cover='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.jpg' data-lrc='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.lrc' data-lrcType='3' ></div></li>
+<li><p>网易云官方外链</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=700 height=86 src="//music.163.com/outchain/player?type=2&id=469719260&auto=1&height=66"></iframe></li>
+<li><p>哔哩哔哩引用<br>无法调清晰度，可以全屏，我讨厌极了这个跳转。可以看到弹幕，不能发弹幕。</p>
+<iframe class="bilibili" src="//player.bilibili.com/player.html?aid=890447701&bvid=BV1hP4y1Y7nm&cid=404949021&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height=500px width=720px</iframe></li>
+</ul>
+<p><del>虽然很不甘心，</del>只能放弃了。</p>
 
       </section>
 
       
       
         <nav class="article-nav">
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
@@ -150,23 +160,6 @@
       
         <a href="/2021/08/24/PC%E5%B7%A5%E5%85%B7%E5%A4%87%E4%BB%BD/" itemprop="url">
           <h2 class="card-text--title text-ellipsis">PC工具备份</h2>
-        </a>
-      
-      <div class="card-text--row">下一篇</div>
-    </div>
-  </article>
-</div>
-          
-          
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://z3.ax1x.com/2021/09/08/hHbLPs.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2021/08/17/First/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">欢迎来到我的博客</h2>
         </a>
       
       <div class="card-text--row">上一篇</div>
@@ -342,7 +335,70 @@
   <!-- aplayer -->
 
 
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+
 <!-- dplayer -->
+
+
+<!-- dplayer 视频 start -->
+<script type="text/javascript" src="https://unpkg.com/hls.js@1.0.1/dist/hls.js"></script>
+<script type="text/javascript" src="https://unpkg.com/dplayer@1.25.1/dist/DPlayer.min.js"></script>
+<script type="text/javascript">
+  const dplayer = document.querySelectorAll(".dplayer-box");
+  dplayer && initDPlayer(dplayer);
+  function initDPlayer(els) {
+    let elsArr = Array.from(els);
+    elsArr.forEach(el => {
+      let url = el.dataset.url;
+      let pic = el.dataset.pic;
+      let subtitle = el.dataset.subtitle;
+
+      let options = {
+        container: el,
+        video: { url: url, pic: pic },
+        theme: "#b7daff",
+        autoplay: false,
+        loop: false,
+        mutex: true,
+      }
+
+      if (subtitle) {
+        options.subtitle = {
+          url: el.dataset.subtitle,
+        }
+      }
+      new DPlayer(options);
+    });
+  }
+</script>
+<!-- dplayer 视频 end -->
+
 
 
 
