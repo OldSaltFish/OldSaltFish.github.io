@@ -30,23 +30,6 @@
       </tags>
   </entry>
   <entry>
-    <title>音乐和视频测试</title>
-    <url>/2021/09/08/%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>很遗憾，我没有服务器，视频外链和音乐外链很难获取（天价）<br><del>虽然很不甘心，</del>只能放弃了。而且很奇怪的是，这篇文章没有加入评论系统。</p>
-<ul>
-<li><p>外链aplayer播放器（别人的链接，外网）<del>似乎因为后面的内嵌标签无法显示</del></p>
-<div class="aplayer-box" data-url='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.mp3' data-name='アイロニ' data-artist='鹿乃' data-cover='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.jpg' data-lrc='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.lrc' data-lrcType='3' ></div></li>
-<li><p>网易云官方外链</p>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=469719260&auto=1&height=66"></iframe></li>
-<li><p>哔哩哔哩引用<br>无法调清晰度，可以全屏，我讨厌极了这个跳转。可以看到弹幕，不能发弹幕。</p>
-<iframe src="//player.bilibili.com/player.html?aid=890447701&bvid=BV1hP4y1Y7nm&cid=404949021&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  width="100%" height="600px" ></iframe></li>
-</ul>
-]]></content>
-      <tags>
-        <tag>水</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PC工具备份</title>
     <url>/2021/08/24/PC%E5%B7%A5%E5%85%B7%E5%A4%87%E4%BB%BD/</url>
     <content><![CDATA[<ol>
@@ -63,6 +46,23 @@
 ]]></content>
       <tags>
         <tag>PC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>音乐和视频测试</title>
+    <url>/2021/09/08/%E9%9F%B3%E4%B9%90%E5%92%8C%E8%A7%86%E9%A2%91%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>很遗憾，我没有服务器，视频外链和音乐外链很难获取（天价）<br><del>虽然很不甘心，</del>只能放弃了。而且很奇怪的是，这篇文章没有加入评论系统。</p>
+<ul>
+<li><p>外链aplayer播放器（别人的链接，外网）<del>似乎因为后面的内嵌标签无法显示</del></p>
+<div class="aplayer-box" data-url='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.mp3' data-name='アイロニ' data-artist='鹿乃' data-cover='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.jpg' data-lrc='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.lrc' data-lrcType='3' ></div></li>
+<li><p>网易云官方外链</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=469719260&auto=1&height=66"></iframe></li>
+<li><p>哔哩哔哩引用<br>无法调清晰度，可以全屏，我讨厌极了这个跳转。可以看到弹幕，不能发弹幕。</p>
+<iframe src="//player.bilibili.com/player.html?aid=890447701&bvid=BV1hP4y1Y7nm&cid=404949021&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  width="100%" height="400px" ></iframe></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>水</tag>
       </tags>
   </entry>
 </search>
